@@ -16,11 +16,6 @@ module.exports = {
         User.create(req.body, function(user){
             return res.redirect(`/user/${user.id}`)
         })
-        /*
-        let results = User.create(req.body)
-        const userId = results.rows[0].id
-        return res.redirect(`/user/${userId}`)
-        */
     },
     put(req, res) {
         User.update(req.body, () => {
