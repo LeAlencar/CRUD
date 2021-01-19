@@ -8,6 +8,7 @@ For this project I used:
 ✔️PostgreSQL
 ✔️Node
 ✔️Express
+✔️Nunjucks
 
 ## ⚙ Configuration
 
