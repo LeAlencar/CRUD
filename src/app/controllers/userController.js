@@ -9,6 +9,7 @@ module.exports = {
     },
     show(req, res) {
         User.find(req.params.id, function(user) {
+            if(!user) return res.send("User not Found!")
             return res.render('show', {user})
         })
     },
